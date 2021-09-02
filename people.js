@@ -21,6 +21,11 @@ const eyCountries = {
         name: 'Charlie',
         twitter: 'twitter.com'
       },
+      ,
+      {
+        name: 'Galatea',
+        twitter: 'twitter.com'
+      },
       {
         name: 'Jose',
         twitter: 'twitter.com'
@@ -40,21 +45,9 @@ const eyCountries = {
       {
         name: 'Olesia',
         twitter: 'twitter.com'
-      }
-    ]
-  },
-  France: {
-    people: [
+      },
       {
         name: 'Adri',
-        twitter: 'twitter.com'
-      }
-    ]
-  },
-  Greece: {
-    people: [
-      {
-        name: 'Galatea',
         twitter: 'twitter.com'
       }
     ]
@@ -66,11 +59,35 @@ const eyCountries = {
         twitter: 'twitter.com'
       }
     ]
+  },
+  Brazil: {
+    people: [
+      {
+        name: 'Red',
+        twitter: 'twitter.com'
+      }
+    ]
+  },
+  Portugal: {
+    people: [
+      {
+        name: 'Owly',
+        twitter: 'twitter.com'
+      },
+      {
+        name: 'Gonçalo',
+        twitter: 'twitter.com'
+      },
+      {
+        name: 'Mike',
+        twitter: 'twitter.com'
+      }
+    ]
   }
 }
 
 const eyOrigin = {
-  Italy: {
+  Spain: {
     people: [
       {
         name: 'Selo',
@@ -110,7 +127,7 @@ const eyOrigin = {
       }
     ]
   },
-  China: {
+  France: {
     people: [
       {
         name: 'Adri',
@@ -118,7 +135,7 @@ const eyOrigin = {
       }
     ]
   },
-  Canada: {
+  Greece: {
     people: [
       {
         name: 'Galatea',
@@ -126,7 +143,7 @@ const eyOrigin = {
       }
     ]
   },
-  Netherlands: {
+  England: {
     people: [
       {
         name: 'Choobie',
@@ -141,5 +158,22 @@ const eyOrigin = {
         twitter: 'twitter.com'
       }
     ]
+  },
+  Portugal: {
+    people: [
+      {
+        name: 'Owly',
+        twitter: 'twitter.com'
+      },
+      {
+        name: 'Gonçalo',
+        twitter: 'twitter.com'
+      },
+      {
+        name: 'Mike',
+        twitter: 'twitter.com'
+      }
+    ]
   }
+  
 }

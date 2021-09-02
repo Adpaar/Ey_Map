@@ -1,6 +1,6 @@
 'use strict'
 
-const SELECTED_FILL = '#ffff00'
+const SELECTED_FILL = '#fbc02f'
 
 function popUp(people, countryName) {
   const len = people.length
@@ -20,6 +20,7 @@ function popUp(people, countryName) {
   html += `</div>`
   html += `</div>`
   html += `<div class='popup-bot'>`
+  
   html += `<h4>Who's from here :</h4>`
   html += `<div class='popup-list'>`
   html += `<ul>`
@@ -55,34 +56,43 @@ function layers(data) {
         })
         layer.bindPopup(html)
       } else {
-        layer.bindPopup(countryName)
+       
       }
     },
     style: {
       weight: 0.5,
       color: '#909090',
-      fillColor: '#707070'
+      fillColor: '#C7C7C7',
+      fillOpacity:".8"
     }
   })
 }
 
 const eyCountriesLayer = layers(eyCountries)
 const eyOriginLayer = layers(eyOrigin)
+const baseLayers = {
+  "Living Countries": eyCountriesLayer,
+  "Origin Countries": eyOriginLayer
+};
 const map = L.map('map', {
   minZoom: 2,
-  maxZoom: 3.5,
+  maxZoom: 4.5,
+  zoomControl: false,
   zoomSnap: 0.5,
   layers: [eyCountriesLayer]
 }).setView([42, 0], 2)
 L.control
   .layers(
-    {
-      eyCountriesLayer,
-      eyOriginLayer
-    },
+    
+      baseLayers
+    ,
     {},
     {
       collapsed: false
     }
   )
   .addTo(map)
+
+L.control.zoom({
+    position: 'bottomright'
+}).addTo(map);
