@@ -1,0 +1,113 @@
+html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* Fonts : CircularStd */
+@font-face {
+  font-family: 'Black';
+  src: url('../assets/fonts/CircularStd-Black.otf');
+}
+@font-face {
+  font-family: 'BlackItalic';
+  src: url('../assets/fonts/CircularStd-BlackItalic.otf');
+}
+@font-face {
+  font-family: 'Bold';
+  src: url('../assets/fonts/CircularStd-Bold.otf');
+}
+@font-face {
+  font-family: 'BoldItalic';
+  src: url('../assets/fonts/CircularStd-BoldItalic.otf');
+}
+@font-face {
+  font-family: 'Book';
+  src: url('../assets/fonts/CircularStd-Book.otf');
+}
+@font-face {
+  font-family: 'BookItalic';
+  src: url('../assets/fonts/CircularStd-BookItalic.otf');
+}
+@font-face {
+  font-family: 'Medium';
+  src: url('../assets/fonts/CircularStd-Medium.otf');
+}
+@font-face {
+  font-family: 'MediumItalic';
+  src: url('../assets/fonts/CircularStd-MediumItalic.otf');
+}
+#map {
+  width: 90%;
+  height: 90vh;
+}
+
+.popup {
+  width: 250px;
+  color: #333;
+  box-shadow: 0 3px 14px rgb(0 0 0 / 40%);
+  font-family: 'Book';
+  border-radius: 20px;
+}
+.popup-top {
+  font-family: 'Black';
+  font-size: 1.7rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #fbc02f;
+}
+.popup-number {
+  font-family: 'Black';
+  font-size: 1rem;
+  position: relative;
+  color: black;
+}
+.popup-number-pic {
+  position: absolute;
+  top: 7px;
+  right: 11px;
+  font-size: 1.1rem;
+}
+.popup-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.popup-bot h4 {
+  font-size: 1.2rem;
+  font-family: 'Black';
+  padding-left: 10%;
+  margin: 12px 0px 12px 0px;
+}
+.popup-bot li {
+  list-style: none;
+  position: relative;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+.popup-bot li::before {
+  content: '';
+  display: inline-block;
+  height: 12px;
+  width: 12px;
+  background-image: url('/assets/img/bullet.svg');
+  background-size: contain;
+  position: absolute;
+  left: -26px;
+  top: 8px;
+}
+
+/*Overwritting*/
+
+.leaflet-popup-content-wrapper {
+  border-radius: 20px;
+}
+.leaflet-popup-content {
+  margin: 0px 0px;
+}
+.leaflet-container a.leaflet-popup-close-button {
+  top: 4px;
+  right: 4px;
+  color: black;
+}
