@@ -6,35 +6,35 @@ body {
 /* Fonts : CircularStd */
 @font-face {
   font-family: 'Black';
-  src: url('../assets/fonts/CircularStd-Black.otf');
+  src: url('./assets/fonts/CircularStd-Black.otf');
 }
 @font-face {
   font-family: 'BlackItalic';
-  src: url('../assets/fonts/CircularStd-BlackItalic.otf');
+  src: url('./assets/fonts/CircularStd-BlackItalic.otf');
 }
 @font-face {
   font-family: 'Bold';
-  src: url('../assets/fonts/CircularStd-Bold.otf');
+  src: url('./assets/fonts/CircularStd-Bold.otf');
 }
 @font-face {
   font-family: 'BoldItalic';
-  src: url('../assets/fonts/CircularStd-BoldItalic.otf');
+  src: url('./assets/fonts/CircularStd-BoldItalic.otf');
 }
 @font-face {
   font-family: 'Book';
-  src: url('../assets/fonts/CircularStd-Book.otf');
+  src: url('./assets/fonts/CircularStd-Book.otf');
 }
 @font-face {
   font-family: 'BookItalic';
-  src: url('../assets/fonts/CircularStd-BookItalic.otf');
+  src: url('./assets/fonts/CircularStd-BookItalic.otf');
 }
 @font-face {
   font-family: 'Medium';
-  src: url('../assets/fonts/CircularStd-Medium.otf');
+  src: url('./assets/fonts/CircularStd-Medium.otf');
 }
 @font-face {
   font-family: 'MediumItalic';
-  src: url('../assets/fonts/CircularStd-MediumItalic.otf');
+  src: url('./assets/fonts/CircularStd-MediumItalic.otf');
 }
 #map {
   width: 100%;
@@ -96,7 +96,7 @@ body {
   display: inline-block;
   height: 12px;
   width: 12px;
-  background-image: url('/assets/img/bullet.svg');
+  background-image: url('./assets/img/bullet.svg');
   background-size: contain;
   position: absolute;
   left: -26px;

@@ -15,7 +15,7 @@ function popUp(people, countryName) {
   html += `<h4>${countryName}</h4>`
   html += `</div>`
   html += `<div class='popup-number'>`
-  html += `<img src='/assets/img/profile.svg' alt=''>`
+  html += `<img src='./assets/img/profile.svg' alt=''>`
   html += `<div class='popup-number-pic'>${countryNumber}</div>`
   html += `</div>`
   html += `</div>`
