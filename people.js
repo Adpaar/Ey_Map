@@ -95,6 +95,10 @@ const eyCountries = {
         twitter: 'twitter.com'
       },
       {
+        name: 'Dani',
+        twitter: 'twitter.com'
+      },
+      {
         name: 'Mike',
         twitter: 'twitter.com'
       }
@@ -138,7 +142,7 @@ const eyOrigin = {
         twitter: 'twitter.com'
       },
       {
-        name: 'Roly',
+        name: 'Dani',
         twitter: 'twitter.com'
       }
     ]
