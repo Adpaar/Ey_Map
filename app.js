@@ -2,7 +2,7 @@
 
 const SELECTED_FILL = '#fbc02f'
 
-function popUp(people, countryName) {
+function popUp(people, countryName,title) {
   const len = people.length
   const countryNumber = len
   const half = Math.ceil(len / 2)
@@ -20,8 +20,7 @@ function popUp(people, countryName) {
   html += `</div>`
   html += `</div>`
   html += `<div class='popup-bot'>`
-  
-  html += `<h4>Who's from here :</h4>`
+  html += `<h4>${title}</h4>`
   html += `<div class='popup-list'>`
   html += `<ul>`
   firstHalf.forEach(function (guy) {
@@ -39,7 +38,7 @@ function popUp(people, countryName) {
   return html
 }
 
-function layers(data) {
+function layers(data, title) {
   return L.geoJSON(worldJson, {
     onEachFeature: function (feature, layer) {
       var countryName = feature.properties.name
@@ -50,7 +49,7 @@ function layers(data) {
         JSON.stringify(eyCountry) !== '{}' &&
         eyCountry.people.length
       ) {
-        const html = popUp(eyCountry.people, countryName)
+        const html = popUp(eyCountry.people, countryName, title)
         layer.setStyle({
           fillColor: SELECTED_FILL
         })
@@ -68,8 +67,8 @@ function layers(data) {
   })
 }
 
-const eyCountriesLayer = layers(eyCountries)
-const eyOriginLayer = layers(eyOrigin)
+const eyCountriesLayer = layers(eyCountries, "Who's living here :")
+const eyOriginLayer = layers(eyOrigin, "Who's from here :")
 const baseLayers = {
   "Living Countries": eyCountriesLayer,
   "Origin Countries": eyOriginLayer
