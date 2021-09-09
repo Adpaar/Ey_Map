@@ -18,15 +18,6 @@ const eyCountries = {
         twitter: 'twitter.com'
       },
       {
-        name: 'Charlie',
-        twitter: 'twitter.com'
-      },
-      ,
-      {
-        name: 'Galatea',
-        twitter: 'twitter.com'
-      },
-      {
         name: 'Jose',
         twitter: 'twitter.com'
       },
@@ -84,18 +75,38 @@ const eyCountries = {
       }
     ]
   },
+  Israel: {
+    people: [
+      {
+        name: 'Mich',
+        twitter: 'twitter.com'
+      }
+    ]
+  },
   Portugal: {
     people: [
+      {
+        name: 'Selo',
+        twitter: 'twitter.com'
+      },
+      {
+        name: 'Dani',
+        twitter: 'twitter.com'
+      },
+      {
+        name: 'Charlie',
+        twitter: 'twitter.com'
+      },
+      {
+        name: 'Galatea',
+        twitter: 'twitter.com'
+      },
       {
         name: 'Owly',
         twitter: 'twitter.com'
       },
       {
         name: 'Gonçalo',
-        twitter: 'twitter.com'
-      },
-      {
-        name: 'Dani',
         twitter: 'twitter.com'
       },
       {
@@ -167,6 +178,14 @@ const eyOrigin = {
     people: [
       {
         name: 'Choobie',
+        twitter: 'twitter.com'
+      }
+    ]
+  },
+  Israel: {
+    people: [
+      {
+        name: 'Mich',
         twitter: 'twitter.com'
       }
     ]
